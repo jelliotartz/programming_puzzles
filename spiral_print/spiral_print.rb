@@ -4,7 +4,7 @@ two_d_array = [[1,2,3,4,5],
               [16,17,18,19,20]]
 
 def spiral_print(array)
-  top_row = 0 # index of the the upper most row to be printed
+  top_row = 0 # index of the the uppermost row to be printed
   bottom_row = array.length - 1 # index of the the lowermost row to be printed
   right_col = array[0].length - 1 # index of the the rightmost row to be printed
   left_col = 0 # index of the leftmost column to be printed
