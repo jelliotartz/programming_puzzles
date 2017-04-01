@@ -1,4 +1,4 @@
-# Find Duplicates: Given 2 arrays, return the elements that are present in both arrays -
+# Find Duplicates: Given 2 arrays, return the elements that are present in both arrays
 
 # In this challenge, we assume both arrays ARE sorted.
 # If the arrays were NOT sorted, we would immediatey call .sort on both, with O(n) complexity added to total runtime.
@@ -20,6 +20,7 @@ end
 # Efficient solution: compare values as you search, and since arrays are sorted, intelligently determine whether to check values in both arrays
   # i.e., for every value, determine whether the target and search values are less than, greater than, or equal to each other.
   # move along the array values according to this logic, rather than blindly checking all values in both arrays.
+  # runtime = O(n + m), where n and m are the lengths of the arrays. simplifies to O(n)
 
 def find_duplicates_efficient(array_1, array_2)
   result = []
@@ -52,6 +53,7 @@ end
 
 # what if array lengths are very far from equal? e.g., array_1 = [10,480,2000,10846] and array_2 = (1..10000).to_a
 # solution: implement binary search on the large array to maximize search efficiency
+# runtime = O(n log n)
 
 def find_duplicates_binary(array_1, array_2)
   # assume that array_1 is the 'small array' and array_2 is the large array. But handle the reverse case
@@ -70,7 +72,6 @@ def find_duplicates_binary(array_1, array_2)
   #   end
   # result == element_1
   # end
-
 end
 
 
