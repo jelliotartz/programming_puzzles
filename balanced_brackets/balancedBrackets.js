@@ -85,3 +85,10 @@ const input = "{{[[(())]]}}"
 
 balacedBracket(input)
 
+/* Reflections on stack data structures
+ *
+ * This exercise is helpful for visualizing and understanding how a stack data structure operates.
+ * The LIFO (last in first out) check to see if brackets match illustrates how a stack organizes and holds data.
+ * js push() and pop() methods mimic the LIFO data storage and retrieval methods of a stack
+ *
+ */
