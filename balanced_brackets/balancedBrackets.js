@@ -61,7 +61,7 @@ function balacedBracket(input) {
     // If the character is an opening bracket, add it to the stack
     if (openers.includes(input[i])) {
       stack.push(input[i])
-      // If the character is a closing brackets, we need to check if it closes the most recently added opening bracket
+      // If the character is a closing bracket, we need to check if it closes the most recently added opening bracket
     } else if (closers.includes(input[i])) {
       // Compare the type of bracket with the most recently added element on the stack
       if (closers.indexOf(input[i]) === openers.indexOf(stack[stack.length - 1])) {
